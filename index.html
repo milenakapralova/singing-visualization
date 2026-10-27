@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="stage"></canvas>
+
+  <div id="overlay">
+    <button id="listen" type="button">Listen</button>
+    <button id="preview" type="button" class="ghost">Preview</button>
+    <p id="message" class="message" hidden></p>
+  </div>
+
+  <div id="bar" hidden>
+    <button id="fullscreen" type="button" title="Fill this screen">Screen</button>
+    <button id="projector" type="button" title="Open on the projector">Send</button>
+    <button id="look" type="button" title="Next look. Arrow keys, or 1 to 8.">Bloom</button>
+    <button id="tempo" type="button" title="Lock the dancers to the tempo" aria-pressed="true">Beat</button>
+    <input id="sensitivity" type="range" min="0.4" max="2.6" step="0.05" value="1" title="Sensitivity" />
+    <span id="note"></span>
+  </div>
+
+  <p id="toast" hidden></p>
+  <button id="fill" type="button" hidden>Fill</button>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
